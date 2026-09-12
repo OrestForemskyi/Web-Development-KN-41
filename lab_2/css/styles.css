@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    color: #10213b;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.site-header,
+footer {
+    padding: 20px 28px;
+    background: #ffffff;
+    border-bottom: 1px solid #dce6ed;
+}
+
+.header-inner,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: inline-block;
+    color: #10213b;
+    text-decoration: none;
+}
+
+.brand strong,
+footer strong {
+    display: block;
+    font-size: 21px;
+}
+
+.brand span,
+footer span,
+footer small {
+    display: block;
+    margin-top: 5px;
+    color: #68788a;
+    font-size: 13px;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 24px;
+    padding: 8px 0;
+    color: #263449;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: #20934b;
+    border-bottom: 2px solid #20934b;
+}
+
+.hero {
+    position: relative;
+    height: 300px;
+    padding: 55px 28px;
+    background: #edf6fa url('../images/2_lab_header.png') right center / 65% 100% no-repeat;
+}
+
+.hero::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 72%;
+    background: #edf6fa;
+    content: '';
+}
+
+.hero-content {
+    position: relative;
+}
+
+.sensor-mark {
+    position: absolute;
+    top: -25px;
+    left: 470px;
+    width: 35px;
+    height: 5px;
+    background: #20934b;
+    transform: translate(3px, 2px) rotate(-8deg);
+}
+
+h1,
+h2 {
+    margin: 0 0 14px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.hero p,
+.order-section > p {
+    color: #536477;
+    line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #ffffff;
+    background: #20934b;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+    background: #176f39;
+    transform: translateY(-2px);
+}
+
+.content-section,
+.warning {
+    padding: 24px 28px 0;
+}
+
+.cards-grid {
+    font-size: 0;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 14px 16px 0;
+    padding: 16px;
+    background: #f6fafc;
+    border: 1px solid #dce6ed;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px #cbd6df;
+    transform: translateY(-2px);
+}
+
+.stat-card {
+    position: relative;
+    width: 170px;
+    height: 143px;
+}
+
+.service-card {
+    width: 222px;
+    height: 112px;
+}
+
+.stat-card span,
+.stat-card small {
+    color: #68788a;
+}
+
+.card strong {
+    display: block;
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.service-card strong {
+    font-size: 16px;
+}
+
+.service-card p {
+    margin: 0;
+    color: #5d6d7d;
+    line-height: 1.4;
+}
+
+.status-badge {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    padding: 5px 10px;
+    color: #20934b;
+    background: #d9f5e2;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.warning {
+    position: relative;
+    margin-top: 2px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background: #fff0f0;
+    border: 2px solid #f3bfc1;
+}
+
+.warning strong {
+    color: #dd3636;
+    font-size: 21px;
+}
+
+.warning p {
+    margin: 5px 0 0;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #dce6ed;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    border: 1px solid #dce6ed;
+    text-align: left;
+}
+
+th {
+    background: #e7eef3;
+}
+
+.danger {
+    color: #e14646;
+    font-weight: bold;
+}
+
+.ok {
+    color: #20934b;
+}
+
+form {
+    display: block;
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+    margin: 0 2% 14px 0;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+label.description {
+    width: 32%;
+    margin-right: 0;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 9px;
+    border: 1px solid #cdd8df;
+    border-radius: 4px;
+    font: inherit;
+}
+
+textarea {
+    height: 80px;
+}
+
+.order-section .button {
+    display: block;
+    margin-top: 4px;
+}
+
+footer {
+    margin-top: 20px;
+    border: 0;
+    background: #293746;
+    color: #ffffff;
+}
+
+footer span,
+footer small {
+    color: #d4dce4;
+}
+
+.footer-right {
+    text-align: right;
+}
