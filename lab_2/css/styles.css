@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -11,15 +12,25 @@ body {
     font-size: 14px;
 }
 
-.site-header,
-footer {
+h1, h2 {
+    margin: 0 0 14px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.site-header {
     padding: 20px 28px;
     background: #ffffff;
     border-bottom: 1px solid #dce6ed;
 }
 
-.header-inner,
-footer {
+.header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +57,7 @@ footer small {
     font-size: 13px;
 }
 
+/* Навигация */
 nav a {
     display: inline-block;
     margin-left: 24px;
@@ -59,22 +71,13 @@ nav a.active {
     color: #20934b;
     border-bottom: 2px solid #20934b;
 }
-
 .hero {
     position: relative;
     height: 300px;
     padding: 55px 28px;
-    background: #edf6fa url('../images/2_lab_header.png') right center / 65% 100% no-repeat;
-}
-
-.hero::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 72%;
-    background: #edf6fa;
-    content: '';
+    background: 
+        linear-gradient(to right, #edf6fa 45%, rgba(237, 246, 250, 0) 75%), 
+        url('../images/2_lab_header.png') right center / 65% 100% no-repeat;
 }
 
 .hero-content {
@@ -91,25 +94,13 @@ nav a.active {
     transform: translate(3px, 2px) rotate(-8deg);
 }
 
-h1,
-h2 {
-    margin: 0 0 14px;
-}
-
-h1 {
-    font-size: 38px;
-}
-
-h2 {
-    font-size: 24px;
-}
-
 .hero p,
 .order-section > p {
     color: #536477;
     line-height: 1.5;
 }
 
+/* Кнопки */
 .button {
     display: inline-block;
     padding: 12px 24px;
@@ -222,8 +213,7 @@ table {
     border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
     padding: 8px 12px;
     border: 1px solid #dce6ed;
     text-align: left;
@@ -259,9 +249,7 @@ label.description {
     margin-right: 0;
 }
 
-input,
-select,
-textarea {
+input, select, textarea {
     display: block;
     width: 100%;
     margin-top: 5px;
@@ -281,8 +269,11 @@ textarea {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
-    border: 0;
+    padding: 20px 28px;
     background: #293746;
     color: #ffffff;
 }

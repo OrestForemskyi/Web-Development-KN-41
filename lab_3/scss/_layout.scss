@@ -1,0 +1,102 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+
+.header__inner,
+.hero-content,
+.content-section,
+.warning,
+.footer__inner {
+    @include m.container;
+}
+
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid v.$color-border;
+    padding: 20px 0;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include m.respond-to(v.$bp-tablet) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+.hero {
+    padding: v.$space-xl 0;
+    background: linear-gradient(to right, #edf6fa 45%, rgba(237, 246, 250, 0) 75%);
+
+    @include m.respond-to(v.$bp-tablet) {
+        background: 
+            linear-gradient(to right, #edf6fa 45%, rgba(237, 246, 250, 0) 75%), 
+            url('../assets/images/2_lab_header.png') right center / 65% 100% no-repeat;
+        
+        min-height: 300px; 
+    }
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    position: relative;
+
+    @include m.respond-to(v.$bp-tablet) {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center;
+    }
+
+    .hero-text {
+        position: relative;
+    }
+
+    .sensor-mark {
+        display: none;
+
+        @include m.respond-to(v.$bp-tablet) {
+            display: block;
+            position: absolute;
+            top: -25px;
+            left: 470px;
+            width: 35px;
+            height: 5px;
+            background: v.$color-primary;
+            transform: translate(3px, 2px) rotate(-8deg);
+        }
+    }
+}
+
+
+.content-section {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+
+footer {
+    background: v.$color-bg-footer;
+    color: #ffffff;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include m.respond-to(v.$bp-tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
