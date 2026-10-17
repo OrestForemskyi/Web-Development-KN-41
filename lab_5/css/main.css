@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -35,7 +34,6 @@ h1, h2 {
   margin: 0 0 14px;
 }
 
-/* Адаптивна типографіка */
 h1 {
   font-size: clamp(1.8rem, 6vw, 2.7rem);
 }
@@ -139,9 +137,6 @@ footer {
   }
 }
 
-/* =========================================
-   БРЕНД ТА НАВІГАЦІЯ
-   ========================================= */
 .brand {
   display: inline-block;
   color: #10213b;
@@ -180,9 +175,6 @@ footer {
   }
 }
 
-/* =========================================
-   КНОПКА
-   ========================================= */
 .button {
   display: inline-block;
   padding: 12px 24px;
@@ -201,10 +193,6 @@ footer {
   transform: translateY(-2px);
 }
 
-/* =========================================
-   СІТКИ (GRIDS)
-   ========================================= */
-/* Оновлена сітка для карток моніторингу */
 .monitoring-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -227,10 +215,6 @@ footer {
   }
 }
 
-/* =========================================
-   КАРТКИ
-   ========================================= */
-/* Базова картка (для послуг і т.д.) */
 .card {
   background: #f6fafc;
   border: 1px solid #dce6ed;
@@ -250,7 +234,6 @@ footer {
   font-size: 18px;
 }
 
-/* Оновлена ООП-картка для сенсорів */
 .stat-card {
   position: relative;
   padding: 24px;
@@ -261,9 +244,6 @@ footer {
 .stat-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(16, 33, 59, 0.08);
-}
-.stat-card {
-  /* Кольорові смужки статусу зліва */
 }
 .stat-card.normal {
   border-left: 6px solid #20934b;
@@ -313,7 +293,6 @@ footer {
   border-top: 1px dashed #dce6ed;
 }
 
-/* Оновлені бейджі статусу */
 .status-badge {
   position: absolute;
   right: 24px;
@@ -339,16 +318,12 @@ footer {
   color: #a93226;
 }
 
-/* Специфічне оформлення картки послуг */
 .service-card p {
   margin: 0;
   color: #536477;
   line-height: 1.4;
 }
 
-/* =========================================
-   ПОПЕРЕДЖЕННЯ ТА ТАБЛИЦЯ
-   ========================================= */
 .warning {
   padding: 16px;
   border: 1px solid #e14646;
@@ -392,9 +367,6 @@ footer {
   color: #20934b;
 }
 
-/* =========================================
-   ФОРМА
-   ========================================= */
 .form {
   display: grid;
   grid-template-columns: 1fr;
@@ -445,9 +417,6 @@ footer {
   }
 }
 
-/* =========================================
-   ФУТЕР
-   ========================================= */
 .footer__nav {
   display: flex;
   flex-direction: column;
